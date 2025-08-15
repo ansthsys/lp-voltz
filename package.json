@@ -6,8 +6,8 @@
   "scripts": {
     "build": "npx tw-patch extract && tsc -b && vite build",
     "dev": "vite",
-    "format": "npx prettier . --write",
-    "lint": "eslint .",
+    "format": "npx prettier ./src --write",
+    "lint": "eslint ./src",
     "preview": "vite preview",
     "prepare": "husky && tw-patch install"
   },
