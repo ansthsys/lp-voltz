@@ -23,6 +23,7 @@ const Button = ({
   asLink,
   variant,
   size,
+  rounded,
   disabled,
   className,
   children,
@@ -36,7 +37,7 @@ const Button = ({
       <a
         {...linkProps}
         className={twMerge(
-          buttonVariants({ variant, size, disabled }),
+          buttonVariants({ variant, size, disabled, rounded }),
           className
         )}
       >
@@ -49,7 +50,7 @@ const Button = ({
     <button
       {...buttonProps}
       className={twMerge(
-        buttonVariants({ variant, size, disabled }),
+        buttonVariants({ variant, size, disabled, rounded }),
         className
       )}
     >

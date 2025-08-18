@@ -1,7 +1,7 @@
 import { cva } from 'class-variance-authority'
 
 export const buttonVariants = cva(
-  'flex items-center justify-center gap-2 rounded-full transition-colors duration-200',
+  'flex items-center justify-center gap-2 transition-colors duration-200',
   {
     variants: {
       variant: {
@@ -9,6 +9,14 @@ export const buttonVariants = cva(
         ghost: [
           'bg-transparent text-primary-1 hover:bg-gray-50/50',
           'backdrop-blur-sm'
+        ]
+      },
+      rounded: {
+        pill: ['rounded-full'],
+        full: [
+          'rounded-full',
+          'flex items-center justify-center',
+          'aspect-square'
         ]
       },
       size: {
@@ -24,6 +32,7 @@ export const buttonVariants = cva(
     defaultVariants: {
       variant: 'primary',
       size: 'md',
+      rounded: 'pill',
       disabled: false
     }
   }
