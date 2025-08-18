@@ -6,3 +6,9 @@
   --color-primary-3: #2e2e2e;
   --color-secondary-1: #edb772;
 }
+
+@layer utilities {
+  .bg-img-jumbotron {
+    background-image: url('./assets/kshithij-chandrashekar-fgaqpNC9zas-unsplash-crop2.jpg');
+  }
+}

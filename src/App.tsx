@@ -1,10 +1,12 @@
 import './App.css'
-import { Header } from './components'
+import { Header, Jumbotron } from '@/components'
 
 function App() {
   return (
-    <main className="bg-white min-h-screen px-3 md:px-10 lg:px-15">
+    <main className="bg-white min-h-screen">
       <Header />
+
+      <Jumbotron />
     </main>
   )
 }
