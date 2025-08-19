@@ -1,0 +1,6 @@
+@reference '@/index.css';
+
+* {
+  @apply font-instrument-s;
+  @apply tracking-[0.01em];
+}

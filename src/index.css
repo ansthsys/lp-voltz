@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
 @import 'tailwindcss';
 
 @theme {
@@ -5,10 +7,38 @@
   --color-primary-2: #1f1f1f;
   --color-primary-3: #2e2e2e;
   --color-secondary-1: #edb772;
+
+  --font-instrument-s: 'Instrument Sans', sans-serif;
 }
 
 @layer utilities {
   .bg-img-jumbotron {
     background-image: url('./assets/kshithij-chandrashekar-fgaqpNC9zas-unsplash-crop2.jpg');
+  }
+
+  .bg-pattern-diagonal {
+    background:
+      linear-gradient(135deg, #0000 20.5%, #ffffff 0 29.5%, #0000 0) 0 50px,
+      linear-gradient(45deg, #0000 8%, #ffffff 0 17%, #0000 0 58%) 100px 0,
+      linear-gradient(
+        135deg,
+        #0000 8%,
+        #ffffff 0 17%,
+        #0000 0 58%,
+        #ffffff 0 67%,
+        #0000 0
+      ),
+      linear-gradient(
+        45deg,
+        #0000 8%,
+        #ffffff 0 17%,
+        #0000 0 58%,
+        #ffffff 0 67%,
+        #0000 0 83%,
+        #ffffff 0 92%,
+        #0000 0
+      ),
+      #f8f8f8;
+    background-size: 200px 200px;
   }
 }
