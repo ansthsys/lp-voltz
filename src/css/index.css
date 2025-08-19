@@ -15,6 +15,7 @@
 
   --background-image-jumbotron: url('@/assets/kshithij-chandrashekar-fgaqpNC9zas-unsplash-crop2.jpg');
   --background-image-solutions: url('@/assets/geranimo-qzgN45hseN0-unsplash.jpg');
+  --background-image-world-map-dotted: url('@/assets/pngfind.com-dotted-background-png-5152525.png');
 }
 
 @layer utilities {
