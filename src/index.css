@@ -9,6 +9,8 @@
   --color-secondary-1: #edb772;
 
   --font-instrument-s: 'Instrument Sans', sans-serif;
+
+  --background-image-solutions: url('@/assets/geranimo-qzgN45hseN0-unsplash.jpg');
 }
 
 @layer utilities {

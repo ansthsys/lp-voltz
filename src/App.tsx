@@ -1,5 +1,5 @@
 import './App.css'
-import { About, Header, Jumbotron } from '@/components'
+import { About, Header, Jumbotron, Solution } from '@/components'
 
 function App() {
   return (
@@ -9,6 +9,8 @@ function App() {
       <Jumbotron />
 
       <About />
+
+      <Solution />
     </main>
   )
 }
