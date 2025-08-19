@@ -2,7 +2,7 @@ import { twMerge } from 'tailwind-merge'
 import { BoxGlass, Button } from '@/ui'
 
 const NAV_ITEMS = [
-  { title: 'volt', url: 'volt' },
+  { title: 'Voltz', url: '' },
   { title: 'about', url: 'about' },
   { title: 'solutions', url: 'solutions' },
   { title: 'impact', url: 'impact' },
@@ -25,7 +25,9 @@ export default function index() {
             const className = twMerge([
               'capitalize hover:bg-inherit text-sm',
               'py-2 px-4 rounded-full font-medium',
-              isFirst ? 'bg-white font-bold italic' : 'bg-transparent'
+              isFirst
+                ? 'bg-white font-neue-machina-inktrap font-extrabold italic'
+                : 'bg-transparent'
             ])
 
             return (
