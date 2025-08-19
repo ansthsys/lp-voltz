@@ -7,7 +7,7 @@ export default function index() {
     <div
       className={twMerge([
         'min-h-screen px-3 md:px-10 lg:px-15',
-        'bg-img-jumbotron bg-no-repeat bg-center bg-cover'
+        'bg-jumbotron bg-no-repeat bg-center bg-cover'
       ])}
     >
       <div

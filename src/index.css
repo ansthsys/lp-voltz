@@ -10,14 +10,11 @@
 
   --font-instrument-s: 'Instrument Sans', sans-serif;
 
+  --background-image-jumbotron: url('./assets/kshithij-chandrashekar-fgaqpNC9zas-unsplash-crop2.jpg');
   --background-image-solutions: url('@/assets/geranimo-qzgN45hseN0-unsplash.jpg');
 }
 
 @layer utilities {
-  .bg-img-jumbotron {
-    background-image: url('./assets/kshithij-chandrashekar-fgaqpNC9zas-unsplash-crop2.jpg');
-  }
-
   .bg-pattern-diagonal {
     background:
       linear-gradient(135deg, #0000 20.5%, #ffffff 0 29.5%, #0000 0) 0 50px,
