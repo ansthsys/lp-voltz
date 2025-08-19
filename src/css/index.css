@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
 
 @import 'tailwindcss';
+@import './font.css';
+@import './app.css';
 
 @theme {
   --color-primary-1: #040000;
@@ -9,8 +11,9 @@
   --color-secondary-1: #edb772;
 
   --font-instrument-s: 'Instrument Sans', sans-serif;
+  --font-neue-machina-inktrap: 'NeueMachina Inktrap', sans-serif;
 
-  --background-image-jumbotron: url('./assets/kshithij-chandrashekar-fgaqpNC9zas-unsplash-crop2.jpg');
+  --background-image-jumbotron: url('@/assets/kshithij-chandrashekar-fgaqpNC9zas-unsplash-crop2.jpg');
   --background-image-solutions: url('@/assets/geranimo-qzgN45hseN0-unsplash.jpg');
 }
 

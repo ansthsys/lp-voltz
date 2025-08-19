@@ -1,0 +1,53 @@
+/* Light */
+@font-face {
+  font-family: 'NeueMachina Inktrap';
+  src: url('@/fonts/NeueMachina-InktrapLight.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Light Italic */
+@font-face {
+  font-family: 'NeueMachina Inktrap';
+  src: url('@/fonts/NeueMachina-InktrapLightIt.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Regular */
+@font-face {
+  font-family: 'NeueMachina Inktrap';
+  src: url('@/fonts/NeueMachina-InktrapRegular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Regular Italic */
+@font-face {
+  font-family: 'NeueMachina Inktrap';
+  src: url('@/fonts/NeueMachina-InktrapRegularIt.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Ultrabold */
+@font-face {
+  font-family: 'NeueMachina Inktrap';
+  src: url('@/fonts/NeueMachina-InktrapUltrabold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Ultrabold Italic */
+@font-face {
+  font-family: 'NeueMachina Inktrap';
+  src: url('@/fonts/NeueMachina-InktrapUltraboldIt.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}

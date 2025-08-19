@@ -1,4 +1,3 @@
-import './App.css'
 import { About, Header, Jumbotron, Solution } from '@/components'
 
 function App() {
