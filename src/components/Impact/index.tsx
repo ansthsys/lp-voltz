@@ -6,7 +6,7 @@ import { ArrowRightIcon } from '@heroicons/react/16/solid'
 export default function index() {
   return (
     <div
-      id="section4"
+      id="impact"
       className={twMerge([
         'min-h-screen',
         'px-3 md:px-8 lg:px-12',
