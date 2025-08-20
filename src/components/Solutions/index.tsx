@@ -5,7 +5,7 @@ import { twMerge } from 'tailwind-merge'
 export default function index() {
   return (
     <div
-      id="impact"
+      id="solutions"
       className={twMerge([
         'bg-primary-1 text-white',
         'rounded-4xl overflow-hidden',
