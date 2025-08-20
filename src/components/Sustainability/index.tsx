@@ -3,7 +3,7 @@ import { twMerge } from 'tailwind-merge'
 export default function index() {
   return (
     <div
-      id="solutions"
+      id="sustainability"
       className={twMerge([
         'min-h-screen',
         'px-3 md:px-10 lg:px-15',

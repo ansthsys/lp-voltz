@@ -1,6 +1,6 @@
 export { default as Header } from './Header'
 export { default as Jumbotron } from './Jumbotron'
 export { default as About } from './About'
-export { default as Solution } from './Solution'
+export { default as Sustainability } from './Sustainability'
 export { default as Impact } from './Impact'
 export { default as Section4 } from './Section4'

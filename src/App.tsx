@@ -4,7 +4,7 @@ import {
   Impact,
   Jumbotron,
   Section4,
-  Solution
+  Sustainability
 } from '@/components'
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
 
       <About />
 
-      <Solution />
+      <Sustainability />
 
       <Impact />
 
