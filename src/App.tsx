@@ -1,4 +1,11 @@
-import { About, Header, Impact, Jumbotron, Solution } from '@/components'
+import {
+  About,
+  Header,
+  Impact,
+  Jumbotron,
+  Section4,
+  Solution
+} from '@/components'
 
 function App() {
   return (
@@ -12,6 +19,8 @@ function App() {
       <Solution />
 
       <Impact />
+
+      <Section4 />
     </main>
   )
 }
