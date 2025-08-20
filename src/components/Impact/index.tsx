@@ -180,7 +180,7 @@ export default function Index() {
             <div className="size-14 ml-auto">
               <Button
                 asLink
-                href={'#about'}
+                href={'#'}
                 variant={'secondary'}
                 rounded={'full'}
                 size={'sm'}

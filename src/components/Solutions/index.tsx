@@ -115,7 +115,7 @@ export default function index() {
             </p>
             <Button
               asLink
-              href={'#about'}
+              href={'#'}
               variant={'primary'}
               rounded={'full'}
               size={'sm'}
