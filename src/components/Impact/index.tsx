@@ -1,9 +1,29 @@
+import { useRef, useState } from 'react'
 import { twMerge } from 'tailwind-merge'
+import { ArrowRightIcon, PauseIcon, PlayIcon } from '@heroicons/react/16/solid'
+import { BoxGlass, Button } from '@/ui'
 import AvatarImage from '@/assets/alexander-hipp-iEEBWgY_6lA-unsplash.jpg'
-import { Button } from '@/ui'
-import { ArrowRightIcon } from '@heroicons/react/16/solid'
+import ImpactVideoCover from '@/assets/44370-438662051_medium.jpg'
+import ImpactVideo from '@/assets/44370-438662051_small.webm'
 
-export default function index() {
+export default function Index() {
+  const [playVideo, setPlayVideo] = useState<boolean>(false)
+  const videoRef = useRef<HTMLVideoElement>(null)
+
+  const buttonVideoHandler = () => {
+    setPlayVideo(prev => {
+      const val = !prev
+
+      if (!!videoRef.current && val) {
+        videoRef.current.play()
+      } else {
+        videoRef.current?.pause()
+      }
+
+      return val
+    })
+  }
+
   return (
     <div
       id="impact"
@@ -132,7 +152,8 @@ export default function index() {
       </div>
       <div
         className={twMerge([
-          'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'
+          'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8',
+          'mb-8'
         ])}
       >
         <div
@@ -211,6 +232,51 @@ export default function index() {
             Fromremote villages tourban neighborhoods
           </p>
         </div>
+      </div>
+
+      <div className="aspect-video rounded-3xl overflow-hidden relative">
+        {!playVideo ? (
+          <img
+            src={ImpactVideoCover}
+            alt="Video Cover"
+            className="h-full w-full object-cover"
+          />
+        ) : (
+          <video
+            ref={videoRef}
+            controls={false}
+            autoPlay={true}
+            loop={true}
+            playsInline={true}
+            disablePictureInPicture={true}
+            className="w-full h-full object-cover"
+          >
+            <source src={ImpactVideo} type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
+        )}
+
+        <BoxGlass
+          className={twMerge([
+            'absolute top-1/2 left-1/2 translate-[-50%]',
+            'flex items-center justify-center gap-3',
+            'hover:cursor-default'
+          ])}
+        >
+          <p className="capitalize font-medium ml-5">our mission</p>
+          <Button
+            onClick={() => buttonVideoHandler()}
+            variant={'primary'}
+            rounded={'full'}
+            size={'sm'}
+          >
+            {!playVideo ? (
+              <PlayIcon className="size-5 text-secondary-1" />
+            ) : (
+              <PauseIcon className="size-5 text-secondary-1" />
+            )}
+          </Button>
+        </BoxGlass>
       </div>
     </div>
   )
