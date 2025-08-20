@@ -13,7 +13,7 @@ export default function index() {
   return (
     <header
       className={twMerge([
-        'w-full fixed inset-x-0 top-8 z-[1]',
+        'w-full fixed inset-x-0 top-8 z-[2]',
         'flex flex-row items-center justify-between',
         'px-3 md:px-10 lg:px-15'
       ])}
