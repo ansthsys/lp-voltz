@@ -235,26 +235,30 @@ export default function Index() {
       </div>
 
       <div className="aspect-video rounded-3xl overflow-hidden relative">
-        {!playVideo ? (
-          <img
-            src={ImpactVideoCover}
-            alt="Video Cover"
-            className="h-full w-full object-cover"
-          />
-        ) : (
-          <video
-            ref={videoRef}
-            controls={false}
-            autoPlay={true}
-            loop={true}
-            playsInline={true}
-            disablePictureInPicture={true}
-            className="w-full h-full object-cover"
-          >
-            <source src={ImpactVideo} type="video/webm" />
-            Your browser does not support the video tag.
-          </video>
-        )}
+        <img
+          src={ImpactVideoCover}
+          alt="Video Cover"
+          className={twMerge([
+            'h-full w-full object-cover',
+            !playVideo ? 'block' : 'hidden'
+          ])}
+        />
+
+        <video
+          ref={videoRef}
+          controls={false}
+          autoPlay={true}
+          loop={true}
+          playsInline={true}
+          disablePictureInPicture={true}
+          className={twMerge([
+            'h-full w-full object-cover',
+            playVideo ? 'block' : 'hidden'
+          ])}
+        >
+          <source src={ImpactVideo} type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
 
         <BoxGlass
           className={twMerge([
