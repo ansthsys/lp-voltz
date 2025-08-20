@@ -264,7 +264,8 @@ export default function Index() {
           className={twMerge([
             'absolute top-1/2 left-1/2 translate-[-50%]',
             'flex items-center justify-center gap-3',
-            'hover:cursor-default'
+            'hover:cursor-default',
+            playVideo && 'opacity-25 hover:opacity-100'
           ])}
         >
           <p className="capitalize font-medium ml-5">our mission</p>
