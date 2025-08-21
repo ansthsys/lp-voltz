@@ -1,6 +1,7 @@
 import {
   About,
   CTA,
+  Footer,
   Header,
   Impact,
   Jumbotron,
@@ -27,6 +28,8 @@ function App() {
       <Project />
 
       <CTA />
+
+      <Footer />
     </main>
   )
 }
