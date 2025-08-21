@@ -5,7 +5,7 @@ import { twMerge } from 'tailwind-merge'
 export default function index() {
   return (
     <div
-      id="solutions"
+      id="cta"
       className={twMerge([
         'lg:min-h-[40dvh]',
         'bg-secondary-1',
