@@ -3,6 +3,7 @@ import {
   Header,
   Impact,
   Jumbotron,
+  Project,
   Solutions,
   Sustainability
 } from '@/components'
@@ -21,6 +22,8 @@ function App() {
       <Solutions />
 
       <Impact />
+
+      <Project />
     </main>
   )
 }
