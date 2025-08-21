@@ -1,5 +1,6 @@
 import {
   About,
+  CTA,
   Header,
   Impact,
   Jumbotron,
@@ -24,6 +25,8 @@ function App() {
       <Impact />
 
       <Project />
+
+      <CTA />
     </main>
   )
 }
