@@ -7,7 +7,7 @@ export default function index() {
         'lg:min-h-[40dvh]',
         'bg-primary-1 text-white',
         'rounded-4xl overflow-hidden',
-        'mx-3 md:mx-10 lg:mx-15 mb-8',
+        'mx-3 md:mx-10 lg:mx-15',
         'px-5 py-8 md:px-8 md:py-12',
         'grid grid-cols-1  gap-8 md:gap-14 lg:gap-52'
       ])}

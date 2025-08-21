@@ -9,6 +9,7 @@ import {
   Solutions,
   Sustainability
 } from '@/components'
+import { twMerge } from 'tailwind-merge'
 
 function App() {
   return (
@@ -27,9 +28,28 @@ function App() {
 
       <Project />
 
-      <CTA />
+      <div
+        className={twMerge([
+          'bg-footer bg-bottom bg-cover bg-no-repeat',
+          'pt-0 pb-8 md:pb-12 lg:pb-16'
+        ])}
+      >
+        <div
+          className={twMerge([
+            'h-full w-full bg-white',
+            'bg-gradient-to-b',
+            'from-0% from-white',
+            'via-60% via-white',
+            'via-80% via-white/90',
+            'via-85% via-orange-300/50',
+            'to-100% to-transparent'
+          ])}
+        >
+          <CTA />
 
-      <Footer />
+          <Footer />
+        </div>
+      </div>
     </main>
   )
 }
