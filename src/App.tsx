@@ -36,12 +36,11 @@ function App() {
       >
         <div
           className={twMerge([
-            'h-full w-full bg-white',
+            'h-full w-full',
             'bg-gradient-to-b',
             'from-0% from-white',
-            'via-60% via-white',
-            'via-80% via-white/90',
-            'via-85% via-orange-300/50',
+            'via-40% via-white/50',
+            'via-65% via-orange-300/50',
             'to-100% to-transparent'
           ])}
         >
